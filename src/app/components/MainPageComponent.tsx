@@ -93,11 +93,11 @@ const MainPageComponent = () => {
 
               <p className="text-[#5e7a7d] mt-[36px] mb-[18px]">Select Tip %</p>
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-[16px] lg:gap-[14.5px]">
-                <TipButtonComponent percent="5" tip={setSavedTipInput} savedTip={savedTipInput}/>
-                <TipButtonComponent percent="10" tip={setSavedTipInput} savedTip={savedTipInput}/>
-                <TipButtonComponent percent="15" tip={setSavedTipInput} savedTip={savedTipInput}/>
-                <TipButtonComponent percent="25" tip={setSavedTipInput} savedTip={savedTipInput}/>
-                <TipButtonComponent percent="50" tip={setSavedTipInput} savedTip={savedTipInput}/>
+                <TipButtonComponent percent="5" tip={setSavedTipInput} savedTip={savedTipInput} tipInput={setTipInput}/>
+                <TipButtonComponent percent="10" tip={setSavedTipInput} savedTip={savedTipInput} tipInput={setTipInput}/>
+                <TipButtonComponent percent="15" tip={setSavedTipInput} savedTip={savedTipInput} tipInput={setTipInput}/>
+                <TipButtonComponent percent="25" tip={setSavedTipInput} savedTip={savedTipInput} tipInput={setTipInput}/>
+                <TipButtonComponent percent="50" tip={setSavedTipInput} savedTip={savedTipInput} tipInput={setTipInput}/>
                 <input
                   onChange={(e) => {
                     if(Number(e.target.value) >= 0 || e.target.value === ''){
@@ -118,7 +118,7 @@ const MainPageComponent = () => {
               </div>
               <div className="flex justify-between">
                 <p className="text-[#5e7a7d] mt-[36px] mb-[12px]">Number of People</p>
-                <p className="text-[#FF835B]">{peopleText}</p>
+                <p className="text-[#FF835B] mt-[36px] mb-[12px]">{peopleText}</p>
               </div>
               <div className="relative">
                 <span className="absolute top-4 left-[14px]">
