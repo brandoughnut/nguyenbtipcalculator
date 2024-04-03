@@ -6,7 +6,7 @@ const ResultsBoxComponent = (prop: {tipAmount:string, totalAmount:string, handle
   return (
     <div className="mx-auto lg:mx-0 w-full px-[24px] lg:px-0 lg:my-auto mb-[32px]">
       <div className="w-full h-[257px] lg:w-[413px] lg:h-[417px] bg-[#00494d] rounded-[20px] px-[24px] lg:px-[40px] lg:ms-[15px]">
-        <div className="grid grid-cols-2 pt-[30px] lg:pt-[52px]">
+        <div className="flex justify-between pt-[30px] lg:pt-[52px]">
           <div className="my-auto text-[14px] lg:text-[16px]">
             <p className="text-white spaceRegular">Tip Amount</p>
             <p className="text-[#7f9c9f] spaceRegular">/ person</p>
@@ -15,7 +15,7 @@ const ResultsBoxComponent = (prop: {tipAmount:string, totalAmount:string, handle
             {`$${prop.tipAmount}`}
           </div>
         </div>
-        <div className="grid grid-cols-2 mt-[16px] lg:mt-[36px]">
+        <div className="flex justify-between mt-[16px] lg:mt-[36px]">
           <div className="my-auto text-[14px] lg:text-[16px]">
             <p className="text-white spaceRegular">Total</p>
             <p className="text-[#7f9c9f] spaceRegular">/ person</p>
