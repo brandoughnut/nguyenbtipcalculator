@@ -1,3 +1,10 @@
+Name: Brandon Nguyen
+Date: 4/3/2024
+Lab Name: Tip Calculator
+Brief Description: Created a tip calculator using next js and components
+Peer Reviewer: 
+Peer Review Comments: 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
