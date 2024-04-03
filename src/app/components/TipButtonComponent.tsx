@@ -2,10 +2,14 @@
 
 import React from "react";
 
-const TipButtonComponent = (prop: { percent: string }) => {
+
+const TipButtonComponent = (prop: { percent: string, tip: (input:string) => void, savedTip:string} ) => {
+
   return (
-    <button className="w-full h-[48px] bg-[#00494d] rounded-[5px] text-white text-[24px] hover:bg-[#9FE8DF] hover:text-[#00494d]">
-      {prop.percent}
+    <button onClick={() => {
+      prop.tip(prop.percent)
+      }} className={`w-full h-[48px] rounded-[5px] text-[24px] hover:bg-[#9FE8DF] hover:text-[#00494d] ${prop.savedTip === prop.percent ? 'text-[#00494d] bg-[#26c0ab]' : 'bg-[#00494d] text-white'}`}>
+      {`${prop.percent}%`}
     </button>
   );
 };
